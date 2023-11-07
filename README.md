@@ -1,7 +1,17 @@
+## FixMatch for Audio-based COVID-19 Detection
+
+Code for the paper: "[[Exploring Semi-supervised Learning for Audio-based COVID-19 Detection using FixMatch](https://mobile-systems.cl.cam.ac.uk/papers/interspeech22.pdf)]()" by Ting Dang, Thomas Quinnell, and Cecilia Mascolo.
+
+
+
 ## Previous work
+
 For the code used as the foundation for the project and details on accessing the dataset, please see the [COVID-19 Sound Team's repository](https://github.com/cam-mobsys/covid19-sounds-neurips) by Tong Xia, Dimitris Spathis, and Andreas Grammenos.
 
+
+
 ## Code
+
 The models are implemented in Python3 (tested using `3.6` and `3.7`) using Tensorflow `1.15`.
 Before running the code, the relevant data files must be pre-processed and inserted into the correct
 directories, which will be explained in later sections.
@@ -41,10 +51,10 @@ There are 4 sections of the code, namely:
     ```
      python data_flatten.py
     ```
-Then follow the instructions below and in the README of the preprocess directory to remove noisy samples.
-In order to decide if a provided audio sample is of sufficient quality to be used for inference we provide a tool that
-automatically detects whether a sample is of high-quality. This tool employs another network, namely
-Yamnet. The sample should contain either:
+    Then follow the instructions below and in the README of the preprocess directory to remove noisy samples.
+    In order to decide if a provided audio sample is of sufficient quality to be used for inference we provide a tool that
+    automatically detects whether a sample is of high-quality. This tool employs another network, namely
+    Yamnet. The sample should contain either:
 
 - breathing (will be tagged with `'b'`),
 - cough (will be tagged with `'c'`),
@@ -108,3 +118,17 @@ edit the .sh files to include extra arguments such as:
    sh run_pred.sh
    python vis_predictions.py
   ```
+
+## Citing this work
+
+```shell
+@article{dang2022exploring,
+  title={Exploring Semi-supervised Learning for Audio-based COVID-19 Detection using FixMatch},
+  author={Dang, Ting and Quinnell, Thomas and Mascolo, Cecilia},
+  journal={Proc. Interspeech 2022},
+  pages={2468--2472},
+  year={2022}
+}
+```
+
+## 
