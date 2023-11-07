@@ -1,6 +1,6 @@
 ## FixMatch for Audio-based COVID-19 Detection
 
-Code for the paper: "[[Exploring Semi-supervised Learning for Audio-based COVID-19 Detection using FixMatch](https://mobile-systems.cl.cam.ac.uk/papers/interspeech22.pdf)]()" by Ting Dang, Thomas Quinnell, and Cecilia Mascolo.
+Code for the paper: "[[Exploring Semi-supervised Learning for Audio-based COVID-19 Detection using FixMatch](https://mobile-systems.cl.cam.ac.uk/papers/interspeech22.pdf)]" by Ting Dang, Thomas Quinnell, and Cecilia Mascolo.
 
 
 
